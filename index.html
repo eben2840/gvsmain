@@ -219,15 +219,13 @@
                       <form action="" id="packageForm" method="post" role="form" class=" " style=" background-color:#f7f9fc; border-radius: 10px; "> 
                         
                         <div class="mb-2 w-100">
-                          <input class="form-control email-input" type="number" id="weight" name="weight" step="0.01" required class="form-control" aria-label="Amount (to the nearest dollar)" placeholder="Eg. 2" />
+                          <input class="form-control email-input" type="number" id="weight" step="0.01" required class="form-control" placeholder="Eg. 2" />
                         </div>
                        
                         <div class="d-grid">
                           <button class="btn btn-lg btn-primary lh-xl mb-x1" type="submit">Calculate Charges</button></div>
                       </div>
 
-          
-                      <!--<div id="result"></div>-->
                       </form>
                     </div>
                    
@@ -235,7 +233,7 @@
                 </div>
                 
                 <div class="my-3">
-                  <div class="sent-message bg-dark-subtle p-3 text-center text-white fs-5 " id="result">Shipping Charges:</div>
+                  <div class="sent-message bg-dark-subtle p-3 text-center text-white fs-5 " id="result" class="result-message" id="result">Shipping Charges:</div>
                 </div>
               </div>
             </div>
@@ -742,7 +740,8 @@
         </footer>
       </div>
     </main><!-- ===============================================--><!--    End of Main Content--><!-- ===============================================-->
-
+   
+    <script src="assets/js/main.js"></script>
 
     <script>
       document.getElementById('packageForm').addEventListener('submit', function(event) {
